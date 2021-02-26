@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#container {
+    width: 100%;
+}
+
+/* 去除图片间隙 */
+img{
+    vertical-align: top;
+}
+
+/* 去除浮动影响 */
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.clearfix{
+    zoom: 1;
+}
+
+/* 容器居中 */
+.album-warp{
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 大立方容器 */
+.cube{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    left: 150px;
+    top: 150px;
+    /* 开启3D动画 */
+    transform-style: preserve-3d;
+    /* 无限旋转 */
+    animation: rotate 20s infinite linear;
+}
+
+/* 3D旋转360度 */
+@keyframes rotate{
+    from{
+        transform: rotateX(0) rotateY(0);
+    }
+    to{
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+.cube div{
+    /* 图片重叠 */
+    position: absolute;
+    transition: all 1000ms;
+    opacity: 0.8;
+}
+
+/* 大立方图片 */
+.cube div .big-pictures{
+    width: 200px;
+    height: 200px;
+}
+
+/* 正面图片 */
+.cube .big-cube-front{
+    transform: translateZ(100px);
+}
+
+/* 背面图片 */
+.cube .big-cube-back{
+    transform: translateZ(-100px);
+}
+
+/* 左面图片 */
+.cube .big-cube-left{
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+/* 右面图片 */
+.cube .big-cube-right{
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+/* 右面图片 */
+.cube .big-cube-top{
+    transform: rotateX(90deg) translateZ(100px);
+}
+
+/* 右面图片 */
+.cube .big-cube-bottom{
+    transform: rotateX(-90deg) translateZ(100px);
+}
+
+/* 鼠标移入立方大立方放大 */
+.cube:hover .big-cube-front{
+    transform: translateZ(200px);
+}
+
+.cube:hover .big-cube-back{
+    transform: translateZ(-200px);
+}
+
+.cube:hover .big-cube-left{
+    transform: rotateY(90deg) translateZ(200px);
+}
+
+.cube:hover .big-cube-right{
+    transform: rotateY(-90deg) translateZ(200px);
+}
+
+.cube:hover .big-cube-top{
+    transform: rotateX(90deg) translateZ(200px);
+}
+
+.cube:hover .big-cube-bottom{
+    transform: rotateX(-90deg) translateZ(200px);
+}
+
+/* 小立方容器 */
+.cube ul.small-cube{
+    height: 100px;
+    width: 100px;
+
+    /* 位于大立方中间 */
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+/* 图片重叠 */
+.cube ul.small-cube li{
+    float: left;
+    list-style-type: none;
+    position: absolute;
+}
+
+/* 小立方图片大小 */
+.cube ul.small-cube li .small-pictures{
+    width: 100px;
+    height: 100px;
+}
+
+/* 小立方正面 */
+.cube ul.small-cube li.small-cube-front{
+    transform: translateZ(50px);
+}
+
+/* 小立方背面面 */
+.cube ul.small-cube li.small-cube-back{
+    transform: translateZ(-50px);
+}
+
+/* 小立方正面 */
+.cube ul.small-cube li.small-cube-left{
+    transform: rotateY(90deg) translateZ(50px);
+}
+
+/* 小立方背面面 */
+.cube ul.small-cube li.small-cube-right{
+    transform: rotateY(-90deg) translateZ(50px);
+}
+
+/* 小立方正面 */
+.cube ul.small-cube li.small-cube-top{
+    transform: rotateX(90deg) translateZ(50px);
+}
+
+/* 小立方背面面 */
+.cube ul.small-cube li.small-cube-bottom{
+    transform: rotateX(-90deg) translateZ(50px);
+}
