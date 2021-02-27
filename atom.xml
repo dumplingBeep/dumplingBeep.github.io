@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://dumplingbeep.github.io</id>
-    <title>Gridea</title>
-    <updated>2021-02-27T02:06:19.289Z</updated>
+    <title>Dumpling&apos;s blog</title>
+    <updated>2021-02-27T02:39:26.748Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://dumplingbeep.github.io"/>
     <link rel="self" href="https://dumplingbeep.github.io/atom.xml"/>
     <subtitle>温故而知新</subtitle>
     <logo>https://dumplingbeep.github.io/images/avatar.png</logo>
     <icon>https://dumplingbeep.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2021, Gridea</rights>
+    <rights>All rights reserved 2021, Dumpling&apos;s blog</rights>
     <entry>
         <title type="html"><![CDATA[Hello Gridea]]></title>
         <id>https://dumplingbeep.github.io/post/hello-gridea/</id>
