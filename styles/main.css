@@ -987,7 +987,7 @@ header.masthead .row .site-heading h1 {
   position: relative;
   left: -2px;
   width: 180px;
-  height: 23px;
+  height: 24px;
   padding: 0 0 2px 35px;
   font-size: 12px;
   background-size: 20px;
@@ -1050,7 +1050,7 @@ h3.serchedPreview {
   text-transform: uppercase;
 }
 #mainNav .navbar-nav > li.nav-item > a {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 800;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -1108,7 +1108,7 @@ h3.serchedPreview {
 }
 .page {
   background-color: transparent;
-  margin-top: 15px;
+  padding-top: 15px;
 }
 .page a {
   border: none;
