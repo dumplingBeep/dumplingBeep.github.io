@@ -37,7 +37,6 @@ $(document).on("copy", function () {
 function initTips() {
   $.ajax({
     cache: true,
-    contentType: "application/x-www-form-urlencoded",
     url: `/media/live2d/message.json`,
     dataType: "json",
     success: function (result) {
