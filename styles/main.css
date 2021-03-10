@@ -847,6 +847,9 @@ header.masthead .page-heading,
 header.masthead .site-heading {
   text-align: center;
 }
+header.masthead .site-heading h1 {
+  text-shadow: 1px 2px #666666;
+}
 header.masthead .page-heading h1,
 header.masthead .site-heading h1 {
   font-size: 50px;
